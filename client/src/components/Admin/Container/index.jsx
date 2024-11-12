@@ -19,7 +19,7 @@ const Container = ({ children }) => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="main-container">
       <Sidebar />
       <div className="right">
         <nav>
