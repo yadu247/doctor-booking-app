@@ -43,9 +43,7 @@ const Prescriptions = () => {
           );
         })}
       </div>
-      <div className="btn-container">
-        <Button text="Home" onClick={onClick} />
-      </div>
+      <Button text="Home" onClick={onClick} />
     </div>
   );
 };

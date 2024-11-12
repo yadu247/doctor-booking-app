@@ -26,7 +26,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="dashboard">
+    <div className="doctor-dashboard">
       <Button text="Add Slots" onClick={onClickAddSlots} />
       <Button text="Show Slots" onClick={onClickShowSlots} />
       <Button text="Appointments" onClick={onClickAppointments} />

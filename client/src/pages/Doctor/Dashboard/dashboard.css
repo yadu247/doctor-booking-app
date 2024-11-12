@@ -1,0 +1,4 @@
+.doctor-dashboard {
+  display: flex;
+  flex-direction: column;
+}
