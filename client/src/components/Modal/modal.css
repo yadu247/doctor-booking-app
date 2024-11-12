@@ -1,0 +1,51 @@
+.modal-cover {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.modal {
+  width: 270px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  left: 40%;
+  top: 35%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.modal p {
+  font-size: 15px;
+  margin: 10px 10px 20px 10px;
+}
+
+.modal .controls {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.modal .controls button {
+  height: 30px;
+  margin: 5px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #18bcfc;
+}
+
+.modal .controls button:hover {
+  transform: scale(0.9);
+}

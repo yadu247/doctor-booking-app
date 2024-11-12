@@ -1,0 +1,39 @@
+.slots {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slots .slot-card {
+  width: 400px;
+  height: 150px;
+  border: 2px solid #18bcfc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.slots .slot-card p {
+  margin: 5px;
+}
+
+.slots .slot-card .booked {
+  border: 1px solid green;
+  width: fit-content;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.slots .slot-card .not-booked {
+  border: 1px solid red;
+  width: fit-content;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.slots .slot-card .btn-container {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}

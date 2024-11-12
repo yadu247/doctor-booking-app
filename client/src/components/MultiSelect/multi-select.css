@@ -1,0 +1,45 @@
+.select-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+}
+
+.select-item select {
+  border: 1px solid rgb(220, 220, 220);
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.select-item label {
+  font-size: 16px;
+  color: rgb(42, 42, 42);
+}
+
+.select-item .selected-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.select-item .selected-item .selected-item-container {
+  position: relative;
+  width: fit-content;
+}
+
+.select-item .selected-item .selected-item-container span {
+  border: 1px solid rgb(143, 143, 143);
+  padding: 3px 14px 3px 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.select-item .selected-item .selected-item-container button {
+  position: absolute;
+  right: 0;
+  padding: 0 3px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+}

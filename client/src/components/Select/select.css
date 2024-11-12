@@ -1,0 +1,18 @@
+.select-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+}
+
+.select-item select {
+  border: 1px solid rgb(220, 220, 220);
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.select-item label {
+  font-size: 16px;
+  color: rgb(42, 42, 42);
+}

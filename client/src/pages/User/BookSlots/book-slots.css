@@ -1,0 +1,47 @@
+.book-slots {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  border: 2px solid #18bcfc;
+  border-radius: 10px;
+}
+
+.book-slots .top {
+  width: 100%;
+}
+
+.book-slots .slots {
+  width: 100%;
+  min-height: 400px;
+}
+
+.slot-card {
+  height: 100px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.slot-card .book-btn {
+  color: white;
+  padding: 7px 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.slot-card .book-btn:hover {
+  transform: scale(0.9);
+}
+
+.slot-card .cancel-btn {
+  color: white;
+  padding: 7px 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+}
+.slot-card .cancel-btn:hover {
+  transform: scale(0.9);
+}

@@ -1,0 +1,39 @@
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.dashboard .introduction {
+  width: 50%;
+}
+
+.dashboard .headline {
+  margin: 20px;
+}
+
+.dashboard .description {
+  margin: 20px;
+  font-size: 18px;
+  color: rgb(68, 68, 68);
+}
+
+.dashboard .right-section .location-btn-container {
+  padding: 0 16px;
+}
+
+.dashboard .introduction .intro-image {
+  width: 550px;
+  margin: 20px;
+  border-radius: 50px;
+}
+
+.dashboard .right-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.dashboard .right-section .locations {
+  height: 50%;
+}

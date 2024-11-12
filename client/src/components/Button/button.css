@@ -1,0 +1,18 @@
+.btn {
+  width: fit-content;
+  height: 30px;
+  margin: 5px;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}

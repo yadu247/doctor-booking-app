@@ -1,0 +1,38 @@
+.admin-sidebar {
+  width: 22vw;
+  height: 100vh;
+  background-color: rgb(257, 257, 257);
+  border-right: 1px solid #ececec;
+}
+
+.admin-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.admin-sidebar-menu-item {
+  text-decoration: none;
+  color: #364051;
+  padding: 12px 15px;
+  margin: 0 18px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 350;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-sidebar-menu-item:hover {
+  background-color: rgb(240, 248, 255);
+  color: #18bcfc;
+}
+
+.active {
+  background-color: #18bcfc;
+  color: white;
+}

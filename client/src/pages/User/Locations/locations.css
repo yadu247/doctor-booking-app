@@ -1,0 +1,28 @@
+.locations-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.location-item {
+  background-color: #18bcfc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-item:hover {
+  transform: scale(1.03);
+  background-color: #18bbfc;
+}
+
+.location-item p {
+  font-size: 18px;
+}

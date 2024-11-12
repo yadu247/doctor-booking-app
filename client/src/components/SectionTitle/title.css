@@ -1,0 +1,10 @@
+.section-title {
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+.section-title h1 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #262d39;
+}

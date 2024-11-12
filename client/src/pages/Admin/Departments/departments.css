@@ -1,0 +1,11 @@
+.admin-departments {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-department-btn {
+  margin: 15px;
+  width: 96%;
+  display: flex;
+  justify-content: end;
+}

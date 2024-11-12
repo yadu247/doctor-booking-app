@@ -1,0 +1,13 @@
+.add-location-form {
+  width: 100%;
+}
+
+.add-location-form .input {
+  margin: 0 auto;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: end;
+  margin: 10px 20px;
+}

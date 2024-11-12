@@ -1,0 +1,35 @@
+.doctor-container {
+  height: 80vh;
+  width: 80vw;
+  background-color: #18bcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.doctor {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor h1 {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.doctor-item p {
+  margin: 5px;
+}
+
+.doctor img {
+  width: 300px;
+  height: 170px;
+  object-fit: contain;
+}

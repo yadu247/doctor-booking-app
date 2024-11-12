@@ -1,0 +1,53 @@
+.profile-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.profile-container img {
+  width: 130px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  left: 56.5%;
+  top: 80px;
+}
+
+.profile-container .details-container {
+  background-color: #18bcfc;
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+}
+
+.profile-container .details-container .admin-details {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.profile-container .details-container .admin-details .admin-email {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.profile-container .details-container .admin-details .admin-name {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.btn-container {
+  margin: 15px;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-edit {
+  font-size: 30px;
+}

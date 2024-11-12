@@ -1,0 +1,11 @@
+.admin-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-location-btn {
+  width: 96%;
+  margin: 15px;
+  display: flex;
+  justify-content: end;
+}

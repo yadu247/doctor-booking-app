@@ -1,0 +1,11 @@
+.admin-hospitals {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-hospitals-btn {
+  width: 96%;
+  margin: 15px;
+  display: flex;
+  justify-content: end;
+}

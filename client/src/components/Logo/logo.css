@@ -1,0 +1,18 @@
+.logo-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 20px 25px 20px;
+}
+
+.logo-container img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.logo-container .logo-text {
+  font-size: 25px;
+  font-weight: 600;
+  color: #18bcfc;
+}

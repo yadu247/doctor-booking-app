@@ -1,0 +1,44 @@
+.login-container {
+  width: 700px;
+  margin: 7% auto;
+  padding: 50px 100px;
+  border-radius: 5px 100px 5px 100px;
+  border: 2px solid #18bdfc;
+}
+
+.login-container .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.login-container .head img {
+  width: 40px;
+  object-fit: contain;
+}
+
+.login-container .head h1 {
+  font-size: 40px;
+  color: rgb(58, 58, 58);
+}
+
+.login-container .head span {
+  font-size: 15px;
+  position: absolute;
+  right: -40px;
+  bottom: 32px;
+  font-weight: 400;
+  color: rgb(58, 58, 58);
+}
+
+.login-container .head .text {
+  display: flex;
+  position: relative;
+}
+
+.login-container .btn-container {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
