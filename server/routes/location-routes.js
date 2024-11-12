@@ -11,10 +11,10 @@ const {
 
 const router = express.Router();
 
-router.get('/', listLocations);
-router.post('/', addLocation);
-router.get('/:id', getLocationById);
-router.patch('/:id', updateLocation);
-router.delete('/:id', deleteLocation);
+router.get('/', checkToken(['ADMIN', 'DOCTOR', 'USER']), listLocations);
+router.post('/', checkToken(['ADMIN']), addLocation);
+router.get('/:id', checkToken(['ADMIN', 'DOCTOR', 'USER']), getLocationById);
+router.patch('/:id', checkToken(['ADMIN']), updateLocation);
+router.delete('/:id', checkToken(['ADMIN']), deleteLocation);
 
 module.exports = router;

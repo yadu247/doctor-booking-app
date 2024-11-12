@@ -11,11 +11,11 @@ const { checkToken } = require('../middlewares/check-token');
 
 const router = express.Router();
 
-router.get('/', listSlotByDoctorId);
-router.get('/:doctorId', listSlots);
-router.post('/', addSlot);
-router.post('/book', bookSlot);
-router.patch('/:slotId', cancelSlot);
-router.delete('/:slotId', deleteSlot);
+router.get('/', checkToken(['ADMIN', 'DOCTOR', 'USER']), listSlotByDoctorId);
+router.get('/:doctorId', checkToken(['ADMIN', 'DOCTOR', 'USER']), listSlots);
+router.post('/', checkToken(['ADMIN', 'DOCTOR', 'USER']), addSlot);
+router.post('/book', checkToken(['ADMIN', 'DOCTOR', 'USER']), bookSlot);
+router.patch('/:slotId', checkToken(['ADMIN', 'DOCTOR', 'USER']), cancelSlot);
+router.delete('/:slotId', checkToken(['ADMIN', 'DOCTOR', 'USER']), deleteSlot);
 
 module.exports = router;

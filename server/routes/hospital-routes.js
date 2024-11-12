@@ -11,10 +11,10 @@ const {
 
 const router = express.Router();
 
-router.get('/', listHospitals);
-router.post('/', addHospital);
-router.get('/:id', getHospitalById);
-router.patch('/:id', updateHospital);
-router.delete('/:id', deleteHospital);
+router.get('/', checkToken(['ADMIN', 'DOCTOR', 'USER']), listHospitals);
+router.post('/', checkToken(['ADMIN']), addHospital);
+router.get('/:id', checkToken(['ADMIN', 'DOCTOR', 'USER']), getHospitalById);
+router.patch('/:id', checkToken(['ADMIN']), updateHospital);
+router.delete('/:id', checkToken(['ADMIN']), deleteHospital);
 
 module.exports = router;

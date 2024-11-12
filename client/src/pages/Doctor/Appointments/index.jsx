@@ -26,22 +26,30 @@ const Appointments = () => {
   }, []);
 
   return (
-    <div className="appointments">
-      {appointments.map(item => {
-        return (
-          <div className="appointment-card">
-            <p>Patient: {item.user.email}</p>
-            <p>Date: {item.slot.date}</p>
-            <p>Time: {`${item.slot.startTime} - ${item.slot.endTime}`}</p>
-            <Button
-              onClick={() => {
-                onClick(item._id, item.user._id);
-              }}
-              text="Add Prescription"
-            />
-          </div>
-        );
-      })}
+    <div className="container">
+      <div className="appointments">
+        {appointments.map(item => {
+          return (
+            <div className="appointment-card">
+              <p>Patient: {item.user.email}</p>
+              <p>Date: {item.slot.date}</p>
+              <p>Time: {`${item.slot.startTime} - ${item.slot.endTime}`}</p>
+              <Button
+                onClick={() => {
+                  onClick(item._id, item.user._id);
+                }}
+                text="Add Prescription"
+              />
+            </div>
+          );
+        })}
+      </div>
+      <Button
+        onClick={() => {
+          navigate('/doctor/dashboard');
+        }}
+        text="Home"
+      />
     </div>
   );
 };

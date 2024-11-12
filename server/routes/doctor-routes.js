@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.post('/signup', signup);
 router.post('/login', login);
-router.get('/', listDoctors);
-router.get('/:id', getDoctorById);
+router.get('/', checkToken(['ADMIN', 'DOCTOR', 'USER']), listDoctors);
+router.get('/:id', checkToken(['ADMIN', 'DOCTOR', 'USER']), getDoctorById);
 
 module.exports = router;

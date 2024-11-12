@@ -66,7 +66,7 @@ const Signup = () => {
   }, []);
 
   return (
-    <div className="signup">
+    <div className="doctor-signup">
       <div className="signup-container">
         <div className="head">
           <img src="/logo.png" alt="Logo" />

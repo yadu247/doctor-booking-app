@@ -5,7 +5,7 @@
   border-right: 1px solid #ececec;
 }
 
-.admin-sidebar-menu {
+.admin-sidebar .admin-sidebar-menu {
   display: flex;
   flex-direction: column;
   margin: 20px 0;

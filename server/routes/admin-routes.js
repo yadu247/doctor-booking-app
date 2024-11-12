@@ -6,11 +6,8 @@ const {
   resetPassword,
   getById,
 } = require('../controllers/admin-controller');
-const { checkToken } = require('../middlewares/check-token');
 
 const router = express.Router();
-
-// ,checkToken(['ADMIN', 'DOCTOR', 'USER']),
 
 router.post('/signup', signup);
 router.post('/login', login);

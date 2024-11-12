@@ -1,4 +1,4 @@
-.btn {
+.btn-component {
   width: fit-content;
   height: 30px;
   margin: 5px;
@@ -9,10 +9,10 @@
   cursor: pointer;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.btn-component:hover {
+  transform: scale(0.9);
 }
 
-.btn:active {
+.btn-component:active {
   transform: scale(0.9);
 }

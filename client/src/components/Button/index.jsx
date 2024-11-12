@@ -3,7 +3,7 @@ import './button.css';
 const Button = ({ text = 'Click', onClick, color = '#18bcfc' }) => {
   return (
     <button
-      className="btn"
+      className="btn-component"
       style={{ backgroundColor: color }}
       onClick={onClick}
     >

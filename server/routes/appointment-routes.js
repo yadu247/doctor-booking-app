@@ -7,7 +7,15 @@ const { checkToken } = require('../middlewares/check-token');
 
 const router = express.Router();
 
-router.get('/:userId', listAppointmentsByUserId);
-router.get('/doctor/:doctorId', listAppointmentsByDoctorId);
+router.get(
+  '/:userId',
+  checkToken(['ADMIN', 'DOCTOR', 'USER']),
+  listAppointmentsByUserId
+);
+router.get(
+  '/doctor/:doctorId',
+  checkToken(['ADMIN', 'DOCTOR', 'USER']),
+  listAppointmentsByDoctorId
+);
 
 module.exports = router;
