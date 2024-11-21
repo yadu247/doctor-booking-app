@@ -36,11 +36,14 @@ const Dashboard = () => {
         </p>
         <img
           className="intro-image"
-          src="/introduction-image.jpg"
+          src="/introduction-image.png"
           alt="Introduction image"
         />
       </div>
       <div className="right-section">
+        <div className="logout-container">
+          <Button onClick={onClickLogout} text="Logout" />
+        </div>
         <div className="locations">
           <h1 className="headline">Book Slots in your nearest Hospital</h1>
           <p className="description">
@@ -66,7 +69,6 @@ const Dashboard = () => {
           </p>
           <div className="location-btn-container">
             <Button onClick={onClickSeeHistory} text="View History" />
-            <Button onClick={onClickLogout} text="Logout" />
           </div>
         </div>
       </div>

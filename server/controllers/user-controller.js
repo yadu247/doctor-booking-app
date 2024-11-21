@@ -4,12 +4,18 @@ const jwt = require('jsonwebtoken');
 
 module.exports.signup = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password, confirmpassword } = req.body;
     const user = await User.findOne({ email: email });
     if (user) {
       return res
         .status(400)
         .json({ message: 'Email already exists', error: true });
+    }
+
+    if (password != confirmpassword) {
+      return res
+        .status(400)
+        .json({ message: 'Password does not match', error: true });
     }
 
     const hashedPassword = await bcrypt.hash(password, 2);

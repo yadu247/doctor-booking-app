@@ -35,9 +35,7 @@ const Prescriptions = () => {
                 Slot: {item.appointment.slot.startTime} -{' '}
                 {item.appointment.slot.endTime}
               </p>
-              <p>
-                Patient: {item.user.firstname} {item.user.lastname}
-              </p>
+              <p>Patient: {item.user.email}</p>
               <p>Comments: {item.comments}</p>
             </div>
           );

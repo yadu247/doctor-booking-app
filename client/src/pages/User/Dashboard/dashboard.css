@@ -13,9 +13,11 @@
 }
 
 .dashboard .description {
-  margin: 20px;
-  font-size: 18px;
+  margin: 10px 20px;
+  font-size: 16px;
   color: rgb(68, 68, 68);
+  width: 650px;
+  text-align: justify;
 }
 
 .dashboard .right-section .location-btn-container {
@@ -36,4 +38,11 @@
 
 .dashboard .right-section .locations {
   height: 50%;
+}
+
+.dashboard .right-section .logout-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 10px 15px;
 }
