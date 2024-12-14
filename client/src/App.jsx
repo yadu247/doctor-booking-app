@@ -24,8 +24,8 @@ import AdminAddLocation from './pages/Admin/AddLocation';
 import AdminProfile from './pages/Admin/Profile';
 import AdminLogin from './pages/Admin/Login';
 import AdminSignup from './pages/Admin/Signup';
-import AdminForgotPassword from './pages/Admin/ForgotPassword';
-import AdminForgotPasswordReset from './pages/Admin/ForgotPasswordReset';
+// import AdminForgotPassword from './pages/Admin/ForgotPassword';
+// import AdminForgotPasswordReset from './pages/Admin/ForgotPasswordReset';
 // import AdminEditProfile from './pages/Admin/EditProfile';
 // import AdminResetPassword from './pages/Admin/ResetPassword';
 
@@ -37,6 +37,8 @@ import DoctorAddSlots from './pages/Doctor/AddSlots';
 import DoctorAppointments from './pages/Doctor/Appointments';
 import DoctorAddPrescription from './pages/Doctor/AddPrescription';
 import DoctorPrescriptions from './pages/Doctor/Prescriptions';
+import DoctorForgotPassword from './pages/Doctor/ForgotPassword';
+import DoctorForgotPasswordReset from './pages/Doctor/ForgotPasswordReset';
 
 import './App.css';
 
@@ -62,11 +64,11 @@ const App = () => {
 
       <Route path="/admin/login" element={<AdminLogin />} />
       <Route path="/admin/signup" element={<AdminSignup />} />
-      <Route path="/admin/forgot-password" element={<AdminForgotPassword />} />
+      {/* <Route path="/admin/forgot-password" element={<AdminForgotPassword />} />
       <Route
         path="/admin/forgot-password-reset/:token"
         element={<AdminForgotPasswordReset />}
-      />
+      /> */}
       <Route
         path="/admin"
         element={<PrivateRoute role="ADMIN" path="/admin/login" />}
@@ -92,6 +94,14 @@ const App = () => {
 
       <Route path="/doctor/login" element={<DoctorLogin />} />
       <Route path="/doctor/signup" element={<DoctorSignup />} />
+      <Route
+        path="/doctor/forgot-password"
+        element={<DoctorForgotPassword />}
+      />
+      <Route
+        path="/doctor/forgot-password-reset/:token"
+        element={<DoctorForgotPasswordReset />}
+      />
       <Route
         path="/doctor"
         element={<PrivateRoute role="DOCTOR" path="/doctor/login" />}

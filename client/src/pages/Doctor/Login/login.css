@@ -42,3 +42,9 @@
   display: flex;
   justify-content: end;
 }
+
+.login-container .forgot-password {
+  text-decoration: none;
+  color: #18bdfc;
+  margin-left: 15px;
+}

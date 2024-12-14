@@ -18,8 +18,8 @@ const Signup = () => {
     specialization: '',
     hospital: '',
     department: '',
+    about: '',
   });
-  console.log(signup);
   const [hospitals, setHospitals] = useState([]);
   const [departments, setDepartments] = useState([]);
 
@@ -112,6 +112,11 @@ const Signup = () => {
             onChange={e => {
               onChangeSignupDetails(e, 'department');
             }}
+          />
+          <Input
+            className="input"
+            label="About"
+            onChange={e => onChangeSignupDetails(e, 'about')}
           />
           <div className="btn-container">
             <Button color="#5debe1" text="Login" onClick={onLoginClick} />

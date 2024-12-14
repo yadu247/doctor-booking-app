@@ -52,9 +52,9 @@ const Login = () => {
             <Button color="#5debe1" text="Signup" onClick={onSignupClick} />
             <Button text="Login" onClick={onLoginClick} />
           </div>
-          <Link className="forgot-password" to="/admin/forgot-password">
+          {/* <Link className="forgot-password" to="/admin/forgot-password">
             Forgot Password?
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
