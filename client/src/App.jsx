@@ -12,6 +12,8 @@ import Signup from './pages/User/Signup';
 import ShowAppointments from './pages/User/Appointments';
 import BookSlots from './pages/User/BookSlots';
 import ShowPrescriptions from './pages/User/Prescriptions';
+import ForgotPassword from './pages/User/ForgotPassword';
+import ForgotPasswordReset from './pages/User/ForgotPasswordReset';
 
 import AdminDashboard from './pages/Admin/Dashboard';
 import AdminDepartments from './pages/Admin/Departments';
@@ -47,6 +49,11 @@ const App = () => {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route
+        path="/forgot-password-reset/:token"
+        element={<ForgotPasswordReset />}
+      />
       <Route path="/" element={<PrivateRoute role="USER" path="/login" />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/locations" element={<Locations />} />

@@ -3,6 +3,7 @@ import Input from '../../../components/Input';
 import Button from '../../../components/Button';
 import { useState } from 'react';
 import axios from '../../../utils/axios';
+import { Link } from 'react-router-dom';
 
 import './login.css';
 
@@ -51,6 +52,9 @@ const Login = () => {
             <Button color="#5debe1" text="Signup" onClick={onSignupClick} />
             <Button text="Login" onClick={onLoginClick} />
           </div>
+          <Link className="forgot-password" to="/forgot-password">
+            Forgot Password?
+          </Link>
         </div>
       </div>
     </div>
