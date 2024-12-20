@@ -61,7 +61,7 @@ cd server</code></pre>
       <pre><code>npm install</code></pre>
     </li>
     <li>Create a <strong>.env</strong> file in the <strong>server</strong> directory with the following keys:
-      <pre><code>SECRET_KEY</code></pre><pre><code>RESET_PASSWORD_SECRET_KEY</code></pre>
+      <pre><code>SECRET_KEY</code></pre><pre><code>RESET_PASSWORD_SECRET_KEY</code></pre><pre><code>PORT</code></pre><pre><code>MONGO_URI</code></pre>
     </li>
     <li>Start the backend server:
       <pre><code>npm run dev</code></pre>
@@ -83,10 +83,27 @@ cd server</code></pre>
     </li>
   </ol>
 
-  <h3>MongoDB Setup</h3>
-  <ul>
-    <li>If you are using <strong>local MongoDB</strong>, ensure it's running and accessible at the specified URI (<strong>mongodb://localhost:27017/doctorBookingDB</strong>).</li>
-  </ul>
+  <h3>MongoDB Atlas Setup</h3>
+<ul>
+  <li>
+    If you are using <strong>MongoDB Atlas</strong>, ensure you have set up a cluster and created a database user with proper permissions.
+  </li>
+  <li>
+    Obtain your connection string from the Atlas dashboard. It will look something like this: 
+    <code>mongodb+srv://<username>:<password>@cluster0.abcdef.mongodb.net/<dbname>?retryWrites=true&w=majority</code>.
+  </li>
+  <li>
+    Replace <code>&lt;username&gt;</code>, <code>&lt;password&gt;</code>, and <code>&lt;dbname&gt;</code> with your credentials and database name.
+  </li>
+  <li>
+    Add the connection string to your <code>.env</code> file as:
+    <pre><code>MONGO_URI=mongodb+srv://<username>:<password>@cluster0.abcdef.mongodb.net/<dbname>?retryWrites=true&w=majority</code></pre>
+  </li>
+  <li>
+    Ensure your application connects to the database using this URI, and whitelist your IP address or allow access from anywhere in the Atlas settings.
+  </li>
+</ul>
+
 
   <h3>Optional: Seed the Database</h3>
   <p>For testing purposes, you can seed the database with sample admin, doctors, users, and appointments.</p>
