@@ -1,35 +1,73 @@
 .doctor-container {
-  height: 80vh;
-  width: 80vw;
-  background-color: #18bcfc;
+  height: auto;
+  width: 90vw;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .doctor {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
 }
 
 .doctor h1 {
-  font-size: 25px;
-  margin: 5px;
+  font-size: 28px;
+  margin: 15px 0;
+  color: #333;
+  font-weight: bold;
 }
 
-.doctor-item p {
-  margin: 5px;
+.doctor p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
 }
 
 .doctor img {
-  width: 300px;
-  height: 170px;
-  object-fit: contain;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #18bcfc;
+  margin-top: 20px;
+}
+
+.doctor button {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .doctor-container {
+    width: 95vw;
+    padding: 10px;
+  }
+
+  .doctor h1 {
+    font-size: 24px;
+  }
+
+  .doctor p {
+    font-size: 16px;
+  }
+
+  .doctor img {
+    width: 200px;
+    height: 200px;
+  }
 }

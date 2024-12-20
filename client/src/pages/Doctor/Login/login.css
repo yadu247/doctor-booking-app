@@ -1,16 +1,20 @@
+/* Base Styles */
 .login-container {
   width: 700px;
   margin: 7% auto;
-  padding: 50px 100px;
+  padding: 50px 40px;
   border-radius: 5px 100px 5px 100px;
   border: 2px solid #18bdfc;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .login-container .head {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 10px;
+  position: relative;
 }
 
 .login-container .head img {
@@ -19,8 +23,9 @@
 }
 
 .login-container .head h1 {
-  font-size: 40px;
+  font-size: 36px;
   color: rgb(58, 58, 58);
+  font-weight: 600;
 }
 
 .login-container .head span {
@@ -32,19 +37,99 @@
   color: rgb(58, 58, 58);
 }
 
-.login-container .head .text {
-  display: flex;
-  position: relative;
-}
-
 .login-container .btn-container {
   padding: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .login-container .forgot-password {
   text-decoration: none;
   color: #18bdfc;
   margin-left: 15px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .login-container {
+    width: 80%;
+    padding: 40px 30px;
+  }
+
+  .login-container .head h1 {
+    font-size: 32px;
+  }
+
+  .login-container .head img {
+    width: 35px;
+  }
+
+  .login-container .head span {
+    font-size: 14px;
+    right: -35px;
+    bottom: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .login-container .head h1 {
+    font-size: 28px;
+  }
+
+  .login-container .head img {
+    width: 30px;
+  }
+
+  .login-container .head span {
+    font-size: 12px;
+    right: -30px;
+    bottom: 22px;
+  }
+
+  .login-container .btn-container {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .login-container .forgot-password {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .login-container .head h1 {
+    font-size: 24px;
+  }
+
+  .login-container .head img {
+    width: 25px;
+  }
+
+  .login-container .head span {
+    font-size: 11px;
+    right: -25px;
+    bottom: 18px;
+  }
+
+  .login-container .btn-container {
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .login-container .forgot-password {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }

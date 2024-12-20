@@ -1,16 +1,20 @@
+/* Base Styles */
 .doctor-signup .signup-container {
   width: 700px;
   margin: 20px auto;
-  padding: 25px 100px;
+  padding: 25px 40px;
   border-radius: 5px 100px 5px 100px;
   border: 2px solid #18bdfc;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .signup-container .head {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 10px;
+  position: relative;
 }
 
 .signup-container .head img {
@@ -19,8 +23,9 @@
 }
 
 .signup-container .head h1 {
-  font-size: 40px;
+  font-size: 36px;
   color: rgb(58, 58, 58);
+  font-weight: 600;
 }
 
 .signup-container .head span {
@@ -40,5 +45,80 @@
 .signup-container .btn-container {
   padding: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .doctor-signup .signup-container {
+    width: 80%;
+    padding: 30px 30px;
+  }
+
+  .signup-container .head h1 {
+    font-size: 32px;
+  }
+
+  .signup-container .head img {
+    width: 35px;
+  }
+
+  .signup-container .head span {
+    font-size: 14px;
+    right: -40px;
+    bottom: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-signup .signup-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .signup-container .head h1 {
+    font-size: 28px;
+  }
+
+  .signup-container .head img {
+    width: 30px;
+  }
+
+  .signup-container .head span {
+    font-size: 12px;
+    right: -35px;
+    bottom: 22px;
+  }
+
+  .signup-container .btn-container {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-signup .signup-container {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .signup-container .head h1 {
+    font-size: 24px;
+  }
+
+  .signup-container .head img {
+    width: 25px;
+  }
+
+  .signup-container .head span {
+    font-size: 11px;
+    right: -25px;
+    bottom: 18px;
+  }
+
+  .signup-container .btn-container {
+    justify-content: center;
+    margin-top: 12px;
+  }
 }

@@ -4,7 +4,6 @@ const Prescription = require('../db/models/prescription-schema');
 module.exports.addPrescription = async (req, res) => {
   try {
     const body = req.body;
-    console.log(body);
     const prescription = await Prescription.create(body);
     return res.status(201).json({
       message: 'Prescription added succesfully',

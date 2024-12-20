@@ -1,13 +1,10 @@
 const mongoose = require('mongoose');
 const chalk = require('chalk');
-
+require('dotenv').config();
+const uri = process.env.MONGO_URI;
 mongoose
-  .connect('mongodb://localhost:27017/doctorBookingDB')
-  .then(() => {
-    console.log(chalk.green('Database Connected'));
-  })
-  .catch(e => {
-    console.log(chalk.red(e.message));
-  });
+  .connect(uri)
+  .then(() => console.log('MongoDB connected successfully'))
+  .catch(err => console.error('MongoDB connection error: ', err));
 
 module.exports = mongoose;

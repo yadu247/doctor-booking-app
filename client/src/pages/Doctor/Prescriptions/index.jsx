@@ -30,7 +30,7 @@ const Prescriptions = () => {
         {prescriptions.map(item => {
           return (
             <div className="appointment-card">
-              <p>Date: {item.appointment.date}</p>
+              <p>Date: {item.appointment.date.substr(0, 10)}</p>
               <p>
                 Slot: {item.appointment.slot.startTime} -{' '}
                 {item.appointment.slot.endTime}

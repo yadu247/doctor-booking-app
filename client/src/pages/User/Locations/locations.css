@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .location-item:hover {
@@ -25,4 +26,26 @@
 
 .location-item p {
   font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .locations-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .locations-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .location-item {
+    padding: 15px;
+  }
+
+  .location-item p {
+    font-size: 16px;
+  }
 }

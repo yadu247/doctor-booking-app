@@ -24,7 +24,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="introduction">
-        <Logo />
+        <Logo className="logo" />
         <h1 className="headline">
           Your Health, Our Commitment. <br />
           Book Today for a Brighter Tomorrow!

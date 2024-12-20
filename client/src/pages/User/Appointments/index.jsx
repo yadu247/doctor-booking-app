@@ -31,7 +31,7 @@ const Appointments = () => {
         {appointments.map(item => {
           return (
             <div className="appointment-card">
-              <p>Date: {item.slot.date}</p>
+              <p>Date: {item.slot.date.substr(0, 10)}</p>
               <p>Time: {`${item.slot.startTime} - ${item.slot.endTime}`}</p>
               <p>Doctor: {item.doctor.firstname}</p>
               <p>Hopital: {item.doctor.hospital.name}</p>

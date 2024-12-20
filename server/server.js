@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const ejs = require('ejs');
 const db = require('./db');
-const dotenv = require('dotenv');
+require('dotenv').config();
 
 const app = express();
 
-dotenv.config({ path: './.env' });
+const port = process.env.PORT || 8888;
 
 // middlewares
 app.use(express.json());
@@ -21,6 +21,6 @@ app.use('*', (req, res) => {
   res.status(404).json({ message: 'No Route Found', error: true });
 });
 
-app.listen(8888, () => {
-  console.log('Server is running @ https://localhost:8888/');
+app.listen(port, () => {
+  console.log(`Server is running @ https://localhost:/${port}`);
 });

@@ -31,7 +31,7 @@ const Slots = () => {
         {slots.map(item => {
           return (
             <div className="slot-card">
-              <p>Date: {item.date}</p>
+              <p>Date: {item.date.substr(0, 10)}</p>
               <p>Time: {`${item.startTime} - ${item.endTime}`}</p>
               <p className={item.booked ? 'booked' : 'not-booked'}>
                 {item.booked ? 'Booked' : 'Not booked'}

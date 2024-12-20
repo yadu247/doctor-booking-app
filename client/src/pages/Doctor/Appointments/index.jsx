@@ -32,7 +32,7 @@ const Appointments = () => {
           return (
             <div className="appointment-card">
               <p>Patient: {item.user.email}</p>
-              <p>Date: {item.slot.date}</p>
+              <p>Date: {item.slot.date.substr(0, 10)}</p>
               <p>Time: {`${item.slot.startTime} - ${item.slot.endTime}`}</p>
               <Button
                 onClick={() => {
